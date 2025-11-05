@@ -27,11 +27,19 @@
     font-weight : 900;
     min-height: 100px;
     font-family : var(--font-roboto);
-    background: var(--color-text);
+    background: linear-gradient(135deg, var(--color-primary) 0%, #ff9f1a 50%, var(--color-primary) 100%);
+    background-size: 200% auto;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     line-height: 75px;
-    }
+    animation: gradient-shift 3s ease infinite;
+}
+
+@keyframes gradient-shift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
 
 .description{
     font-size: 30px;
@@ -39,7 +47,14 @@
     margin-bottom: 52px;
 }
 
-.contactBtn{
+.btnGroup {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contactBtn,
+.resumeBtn{
     text-decoration: none;
     background-color: var(--color-primary);
     color : var(--color-text);
@@ -48,6 +63,37 @@
     font-weight: 600;
     padding : 17px 26px;
     box-shadow: 0 0 4px 0 rgba(0,0,0,0.25);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.contactBtn::before,
+.resumeBtn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: left 0.5s ease;
+}
+
+.contactBtn:hover::before,
+.resumeBtn:hover::before {
+    left: 100%;
+}
+
+.contactBtn:hover,
+.resumeBtn:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(255, 206, 33, 0.5);
+}
+
+.resumeBtn {
+    background-color: transparent;
+    border: 2px solid var(--color-primary);
 }
 
 .imgs{
@@ -64,13 +110,11 @@
 
 .heroImg{
     width: 70%;
-    /* height : 42vh; */
     z-index: 1;
     object-fit: cover;
     border-radius: 50%;
-    background-color: rgba(95,115,176,0.5);
-    /* border-radius: 1000px; */
-
+    background: linear-gradient(135deg, rgba(95,115,176,0.6), rgba(255, 206, 33, 0.3));
+    box-shadow: 0 0 40px rgba(255, 206, 33, 0.4), 0 0 80px rgba(95, 115, 176, 0.3);
     animation-name : floating;
     animation-duration: 3s;
     animation-iteration-count: infinite;

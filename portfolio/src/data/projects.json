@@ -2,24 +2,44 @@
   {
     "title": "Expense Tracker",
     "imageSrc": "projects/expensetracker.png",
-    "description": "A Expense Tracker. Easy log expenses and income with simple UI.",
-    "skills": ["React","HTML","CSS"],
+    "description": "Full-stack expense tracker with real-time data visualization, budget alerts, and responsive design. Built with React and local storage for seamless user experience.",
+    "category": "Web App",
+    "year": "2024",
+    "highlights": [
+      "Chart summaries by category",
+      "Budget threshold alerts",
+      "Offline-first with LocalStorage"
+    ],
+    "skills": ["React","HTML","CSS","LocalStorage"],
     "demo": "https://expense-tracker600.netlify.app/",
     "source": "https://github.com/CHANDRANSU2033/Expense-Tracker"
   },
   {
-    "title": "Travel",
+    "title": "Travel Website",
     "imageSrc": "projects/travel.png",
-    "description": "A Travel-Website with user friendly interface and easy navigation ",
-    "skills": ["HTML","CSS","JS","BOOTSTRAP"],
+    "description": "Modern travel booking platform with user-friendly interface, easy navigation, and responsive design. Features destination search and booking functionality.",
+    "category": "Landing Page",
+    "year": "2023",
+    "highlights": [
+      "Responsive grid layout",
+      "Clean, accessible components"
+    ],
+    "skills": ["HTML","CSS","JavaScript","Bootstrap"],
     "demo": "https://travelwebsite723.netlify.app/",
     "source": "https://github.com/CHANDRANSU2033/Travel-site"
   },
   {
-    "title": "Portfolio",
+    "title": "Personal Portfolio",
     "imageSrc": "projects/portfolio.png",
-    "description": "A Website That represents my expereinces, projects, and way to connect with me",
-    "skills": ["React", "HTML","BOOTSTRAP","CSS"],
+    "description": "Interactive portfolio website showcasing my projects, skills, and professional experience. Features smooth animations and modern design principles.",
+    "category": "Portfolio",
+    "year": "2025",
+    "highlights": [
+      "Project filtering & search",
+      "Animated stats and sections",
+      "Light/Dark theme toggle"
+    ],
+    "skills": ["React", "HTML","Bootstrap","CSS"],
     "demo": "/",
     "source": "https://github.com/changabaliye/Portfolio"
   }

@@ -19,6 +19,14 @@
     --color-blur : rgba(25,55,109,0.7);
     --color-project-border : rgba(19, 42, 83,0.9);
 
+    /* UI enhancements */
+    --gradient-primary: linear-gradient(135deg, #5f73b0 0%, #19376d 100%);
+    --gradient-accent: linear-gradient(135deg, #FFCE21 0%, #ff9f1a 100%);
+    --glass-bg: rgba(255,255,255,0.06);
+    --glass-blur: 10px;
+    --elev-1: 0 6px 16px rgba(95,115,176,0.25);
+    --elev-2: 0 10px 30px rgba(95,115,176,0.35);
+
 }
 
 
@@ -36,5 +44,13 @@
 
     --color-project-border : rgba(50, 50, 93, 0.25);
     --color-dark-button : rgba(11, 36, 71, 0.2);
+
+    /* UI enhancements (light) */
+    --gradient-primary: linear-gradient(135deg, #8aa0ff 0%, #c6d1ff 100%);
+    --gradient-accent: linear-gradient(135deg, #f8d24a 0%, #ffd76a 100%);
+    --glass-bg: rgba(0,0,0,0.04);
+    --glass-blur: 8px;
+    --elev-1: 0 6px 16px rgba(0,0,0,0.15);
+    --elev-2: 0 10px 30px rgba(0,0,0,0.2);
 }
 

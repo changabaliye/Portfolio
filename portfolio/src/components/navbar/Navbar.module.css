@@ -19,7 +19,23 @@
     font-style: normal;
     font-size: 50px;
     text-decoration: none;
-    color : var(--color-text);
+    background: linear-gradient(135deg, #FFCE21 0%, #ff9f1a 50%, #FFCE21 100%);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-shift 3s ease infinite;
+    transition: all 0.3s ease;
+}
+
+@keyframes gradient-shift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+.title:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 10px rgba(255, 206, 33, 0.5));
 }
 
 
@@ -37,6 +53,28 @@
     font-size: 25px;
     color : var(--color-text);
     text-decoration: none;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.menuItems a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #FFCE21, #ff9f1a);
+    transition: width 0.3s ease;
+}
+
+.menuItems a:hover {
+    color: var(--color-primary);
+    transform: translateY(-2px);
+}
+
+.menuItems a:hover::after {
+    width: 100%;
 }
 
 .menuBtn{
